@@ -11,7 +11,7 @@ body{
 -webkit-filter: blur(2px); 
 }
 h1{
-    color:rgb(244, 234, 184);
+    color:rgb(247, 240, 204);
     
 }
 img{
@@ -47,7 +47,7 @@ img{
 }
 .gameover{
     font-size: 100px;
-    color: rgb(244, 234, 184);
+    color: rgb(247, 240, 204);
     padding: 100px;
     transition: 1s;
     align-items: center;

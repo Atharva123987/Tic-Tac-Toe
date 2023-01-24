@@ -1,24 +1,61 @@
 *{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+body{
+    background-color: rebeccapurple;
+}
+
+.isBlur{
+    filter: blur(2px);
+-webkit-filter: blur(2px); 
+}
+h1{
+    color:rgb(244, 234, 184);
+    
 }
 img{
     height: 100px;
     width: 100px;
 }
 .cell {
+    
     color: white;
-    height: 200px;
-    width: 200px;
-    border:1px solid white;
+    height: 150px;
+    width: 150px;
+    border:1px solid rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .grid{
+    
     display: inline-grid;
     grid-template-columns:repeat(3,1fr);
-    row-gap: 10px;
-    column-gap: 10px;
-    background-color: rgb(176, 111, 241);
+    row-gap: 5px;
+    column-gap: 5px;
+    align-items: center;
+    background-color: beige;
+    
 }
+.grid-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gameover{
+    font-size: 100px;
+    color: rgb(244, 234, 184);
+    padding: 100px;
+    transition: 1s;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* FOR BLUR 
+filter: blur(2px);
+-webkit-filter: blur(2px); */
+

@@ -54,4 +54,43 @@ img{
     justify-content: center;
     
 }
+.draw{
+    
+    font-size: 100px;
+    color: rgb(247, 240, 204);
+    padding: 100px;
+    transition: 1s;
+    align-items: center;
+    justify-content: center;
+    
+}
 
+.reset-box{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 480px) {
+
+    .cell{
+        height: 100px;
+        width: 100px;
+
+    }
+    img{
+        height: 70px;
+        width: 70px;
+    }
+    .grid-div{
+        flex-direction: column-reverse;
+    }
+    .gameover, .draw{
+        font-size: 50px;
+        padding: 50px;
+        font-size: 75px;
+    }
+    .reset-box button{
+        font-size: 30px;
+    }
+  }

@@ -18,8 +18,18 @@
     
     <div class="grid-div">
         <div class="gameover" style="display: none;">
-            <div>GAME OVER</div>
+            <div align="center">GAME OVER</div>
+            <div class="reset-box">
+                <button onclick="reset()" class="reset">Reset</button>
+            </div>
         </div>
+        <div class="draw" style="display: none;">
+            <div align="center">DRAW</div>
+            <div class="reset-box">
+                <button onclick="reset()" class="reset">Reset</button>
+            </div>
+        </div>
+
     <div class="grid">
         <div class="cell c1" onclick="move('.c1')">
             <img src="/assets/x.png" alt="x" class="x" style="display: none;">

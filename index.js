@@ -3,9 +3,30 @@ var filled =["","","","","","","","","",""]
 var turns=0;
 var stat=0;
 var count=14;
+var obj = {
+    theme:0,
+}
 
 var time = document.getElementById("timer");
 
+function changeTheme(){
+    if(obj.theme==1){
+    console.log("Theme function if");
+    document.body.style.backgroundColor="rgb(156, 57, 186)";
+    document.getElementById("game-title").style.color=" rgb(255, 255, 255)";
+    var aa =document.getElementsByClassName("grid");
+    aa[0].style.backgroundColor="beige";
+    obj.theme = 0;
+    }
+    else{
+    console.log("Theme function else");
+    document.body.style.backgroundColor="black";
+    document.getElementById("game-title").style.color=" rgb(0, 255, 191)";
+    var aa =document.getElementsByClassName("grid");
+    aa[0].style.backgroundColor="rgb(59, 217, 196)";
+    obj.theme = 1;
+    }
+}
         function move(c){
             
             if(player ==0 && filled[c[2]] == "" && stat==0){
@@ -32,7 +53,7 @@ var time = document.getElementById("timer");
                 stat=1;
                 time.style.display="none";
             }
-            if(turns==9){
+            if(turns==9 && stat!=1){
                 var draw = document.querySelectorAll(".draw");
                 draw[0].style.display="inline";
                 stat=1;
@@ -45,42 +66,22 @@ var time = document.getElementById("timer");
             
             
         }
-// function reset(){
-//     player = 0;
-//     filled =["","","","","","","","","",""]
-//     turns=0;
-//     stat =0;
-//     var temp = document.querySelectorAll(".c1 .x");
-//     for(var i=1;i<10;i++){
-//         if(filled[i] =='x'){
-//         // temp = document.querySelectorAll("c"+i+" .x");
-//         console.log("c"+i+" .x");
-//         temp[0].style.display="none";
-//         }
-//         else if(filled[i] == 'o'){
-//             temp = document.querySelectorAll("c"+i+" .o");
-//             temp[0].style.display="none";
-//         }
-//         else{continue;};
-//     }
-    
-    
-// }
+
+if(stat==1){
+    console.log("inside if");
+    var c = document.querySelectorAll(".grid");
+    c.style.backgroundColor="red";
+}
+   
 function reset(){
-    
-        location.reload()
-    
+    window.location.reload(false);
 }
 
 function timer(){
    
     count = 14;
     setInterval(() =>{
-        // if(stat==1){
-            
-        //     time.style.display="none";
-        //     return;
-        // }
+
         if(count<1 && !stat){
             time.style.display="none";
             var gg =document.querySelectorAll(".gameover");
@@ -89,6 +90,9 @@ function timer(){
         }
         else if(turns==9){
             time.style.display="none";
+            return;
+        }
+        else if(stat == 1){
             return;
         }
         

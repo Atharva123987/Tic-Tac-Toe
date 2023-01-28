@@ -75,10 +75,6 @@ img{
     margin:auto;
 }
 
-.c1,.c2,.c3{
-    /* background-image: radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0)); */
-}
-
 .grid-div{
     display: flex;   
 }

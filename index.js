@@ -69,7 +69,48 @@ function changeTheme(){
 
             }
 
+            if( (filled[1] == 'x' && filled[2] == 'x' && filled[3] == 'x') || (filled[1] == 'o' && filled[2] == 'o' && filled[3] == 'o') ){
+                document.getElementsByClassName("cell c1")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c2")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c3")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+            }
+            if( (filled[4] == 'x' && filled[5] == 'x' && filled[6] == 'x') || (filled[4] == 'o' && filled[5] == 'o' && filled[6] == 'o') ){
+                document.getElementsByClassName("cell c4")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c5")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c6")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+            }
+            if( (filled[7] == 'x' && filled[8] == 'x' && filled[9] == 'x') || (filled[7] == 'o' && filled[8] == 'o' && filled[9] == 'o') ){
+                document.getElementsByClassName("cell c7")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c8")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c9")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+            }
+            if( (filled[1] == 'x' && filled[5] == 'x' && filled[9] == 'x') || (filled[1] == 'o' && filled[5] == 'o' && filled[9] == 'o') ){
+                document.getElementsByClassName("cell c1")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c5")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c9")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+            }
+            if( (filled[3] == 'x' && filled[5] == 'x' && filled[7] == 'x') || (filled[3] == 'o' && filled[5] == 'o' && filled[7] == 'o') ){
+                document.getElementsByClassName("cell c3")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c5")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c7")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+            }
+            if( (filled[1] == 'x' && filled[4] == 'x' && filled[7] == 'x') || (filled[1] == 'o' && filled[4] == 'o' && filled[7] == 'o') ){
+                document.getElementsByClassName("cell c1")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c4")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c7")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+            }
+            if( (filled[2] == 'x' && filled[5] == 'x' && filled[8] == 'x') || (filled[2] == 'o' && filled[5] == 'o' && filled[8] == 'o') ){
+                document.getElementsByClassName("cell c2")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c5")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c8")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+            }
+            if( (filled[3] == 'x' && filled[6] == 'x' && filled[9] == 'x') || (filled[3] == 'o' && filled[6] == 'o' && filled[9] == 'o') ){
+                document.getElementsByClassName("cell c3")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c6")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+                document.getElementsByClassName("cell c9")[0].style.backgroundImage="radial-gradient( rgb(224, 131, 131),rgb(255, 0, 0))";
+            }
             
+
             if(turns==9 && stat!=1){
 
                 var draw = document.querySelectorAll(".draw");
@@ -78,6 +119,8 @@ function changeTheme(){
                 time.style.display="none";
 
             }
+
+           
 
             if(turns == 1){
 

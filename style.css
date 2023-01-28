@@ -1,36 +1,31 @@
 *{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-}
-body{
-    background-color: rgb(156, 57, 186);
-    
 }
 
+body{
+    background-color: rgb(156, 57, 186);
+}
 
 #top-container{
     display: flex;
     justify-content: space-between;
-    
     background-repeat:no-repeat;
-   
 }
+
 #game-title{
     font-weight: 900;
     -webkit-text-stroke: 1px white;
     text-shadow: 5px 5px black;
     font-size: 50px;
     color:rgb(255, 255, 255);
-    
 }
+
 #dark-mode{
     margin: auto 10px auto auto;
     box-shadow: 2px 2px black;
-    
 }
 
 #dark-mode:active{
-    
     position: relative;
     top: 2px;
     box-shadow: 0px 1px black;
@@ -39,33 +34,23 @@ body{
 #theme{
     font-weight: 900;
     background-image: radial-gradient(white,rgba(0, 0, 0, 0.065));
-    
 }
 
-#git-logo{ 
-   
-}
 #git-logo img:hover{
       opacity: 75%;
 }
+
 #git-logo img{
     width: 50px;
     height: 50px;
-
-}
-
-
-.isBlur{
-    filter: blur(2px);
--webkit-filter: blur(2px); 
 }
 
 img{
     height: 100px;
     width: 100px;
 }
+
 .cell {
-    
     color: white;
     height: 150px;
     width: 150px;
@@ -74,12 +59,10 @@ img{
     align-items: center;
     justify-content: center;
 }
+
 .cell:hover{
     background-color: rgba(0, 0, 0, 0.177);
-    
 }
-
-
 
 .grid{
     border: 2px solid white;
@@ -91,32 +74,25 @@ img{
     background-color: beige;
     margin:auto;
 }
+
 .grid-div{
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    
+    display: flex;   
 }
+
 .gameover{
-    
     font-size: 100px;
     color: rgb(247, 240, 204);
     margin-right: auto;
     margin-left: auto;
-    transition: 1s;
-    align-items: center;
-    justify-content: center;
-    
+    margin-top:50px;
 }
+
 .draw{
-    
     font-size: 100px;
     color: rgb(247, 240, 204);
-    margin:auto;
-    transition: 1s;
-    align-items: center;
-    justify-content: center;
-    
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:50px;
 }
 
 .reset-box{
@@ -124,17 +100,19 @@ img{
     margin-top: 50px;
     align-items: center;
     justify-content: center;
-    
 }
+
 .reset{
     font-size:30px;
     box-shadow: 5px 5px black;
 }
+
 .reset:active{
     margin-left: 2px;
     margin-top: 2px;
     box-shadow: 2px 2px black;
 }
+
 #timer{
     color: black;
     position:absolute;
@@ -142,10 +120,11 @@ img{
     font-size: x-large;
     top: 50%;
     left: 10%;
-    
     background-color: white;
     box-shadow: 2px 5px black;
 }
+
+
 @media screen and (max-width: 850px) {
     
     #game-title{
@@ -153,7 +132,6 @@ img{
     }
 
     #dark-mode{
-        
         width: 10px;
         margin:auto;
     }
@@ -167,20 +145,23 @@ img{
     .cell{
         height: 100px;
         width: 100px;
-
     }
+
     img{
         height: 70px;
         width: 70px;
     }
+
     .grid-div{
         flex-direction: column-reverse;
     }
+
     .gameover, .draw{
         font-size: 50px;
         padding: 50px;
         font-size: 75px;
     }
+
     .reset-box button{
         font-size: 30px;
     }
@@ -190,7 +171,6 @@ img{
         position:static;
         margin-top: 20px;
         width: fit-content;
-        
     }
     
   }

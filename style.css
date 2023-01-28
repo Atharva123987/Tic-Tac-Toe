@@ -6,14 +6,35 @@ body{
     background-color: rebeccapurple;
 }
 
+#top-container{
+    display: flex;
+     
+}
+#game-title{
+    margin:auto 0 auto auto;
+    font-size: xx-large;
+    color:rgb(247, 240, 204);
+    
+}
+#git-logo{ 
+   margin-left: 465px;
+   
+}
+#git-logo img:hover{
+      opacity: 75%;
+}
+#git-logo img{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+
 .isBlur{
     filter: blur(2px);
 -webkit-filter: blur(2px); 
 }
-h1{
-    color:rgb(247, 240, 204);
-    
-}
+
 img{
     height: 100px;
     width: 100px;
@@ -28,6 +49,11 @@ img{
     align-items: center;
     justify-content: center;
 }
+.cell:hover{
+    background-color: rgba(0, 0, 0, 0.177);
+}
+
+
 
 .grid{
     
@@ -48,7 +74,8 @@ img{
 .gameover{
     font-size: 100px;
     color: rgb(247, 240, 204);
-    padding: 100px;
+    margin-right: auto;
+    margin-left: auto;
     transition: 1s;
     align-items: center;
     justify-content: center;
@@ -58,7 +85,7 @@ img{
     
     font-size: 100px;
     color: rgb(247, 240, 204);
-    padding: 100px;
+    margin:auto;
     transition: 1s;
     align-items: center;
     justify-content: center;
@@ -70,6 +97,14 @@ img{
     margin-top: 50px;
     align-items: center;
     justify-content: center;
+}
+#timer{
+    color: rgb(255, 169, 132);
+    position:absolute;
+    font-weight: 800;
+    font-size: x-large;
+    top: 300px;
+    left:20%;
 }
 @media screen and (max-width: 480px) {
 

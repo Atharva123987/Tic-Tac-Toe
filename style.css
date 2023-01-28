@@ -1,28 +1,47 @@
 *{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
+    
 }
 body{
     background-color: rgb(156, 57, 186);
-    /* background-color: black; */
+    
 }
 
 
 #top-container{
     display: flex;
     justify-content: space-between;
-     
+    
+    background-repeat:no-repeat;
+   
 }
 #game-title{
     font-weight: 900;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    -webkit-text-stroke: 1px white;
+    text-shadow: 5px 5px black;
     font-size: 50px;
     color:rgb(255, 255, 255);
     
 }
 #dark-mode{
     margin: auto 10px auto auto;
+    box-shadow: 2px 2px black;
+    
 }
+
+#dark-mode:active{
+    
+    position: relative;
+    top: 2px;
+    box-shadow: 0px 1px black;
+}
+
+#theme{
+    font-weight: 900;
+    background-image: radial-gradient(white,rgba(0, 0, 0, 0.065));
+    
+}
+
 #git-logo{ 
    
 }
@@ -57,12 +76,13 @@ img{
 }
 .cell:hover{
     background-color: rgba(0, 0, 0, 0.177);
+    
 }
 
 
 
 .grid{
-    
+    border: 2px solid white;
     display: inline-grid;
     grid-template-columns:repeat(3,1fr);
     row-gap: 5px;

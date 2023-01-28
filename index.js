@@ -16,6 +16,7 @@ function changeTheme(){
     document.getElementById("game-title").style.color=" rgb(255, 255, 255)";
     var aa =document.getElementsByClassName("grid");
     aa[0].style.backgroundColor="beige";
+    document.getElementById("top-container").style.backgroundImage="none";
     obj.theme = 0;
     }
     else{
@@ -24,6 +25,8 @@ function changeTheme(){
     document.getElementById("game-title").style.color=" rgb(0, 255, 191)";
     var aa =document.getElementsByClassName("grid");
     aa[0].style.backgroundColor="rgb(59, 217, 196)";
+    document.getElementById("top-container").style.backgroundImage="linear-gradient(rgb(0, 255, 195),rgba(0, 255, 195, 0.275))";
+
     obj.theme = 1;
     }
 }
@@ -53,6 +56,8 @@ function changeTheme(){
                 stat=1;
                 time.style.display="none";
             }
+            
+            
             if(turns==9 && stat!=1){
                 var draw = document.querySelectorAll(".draw");
                 draw[0].style.display="inline";

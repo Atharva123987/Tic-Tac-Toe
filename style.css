@@ -4,20 +4,24 @@
 }
 body{
     background-color: rebeccapurple;
+    /* background-color: black; */
 }
+
 
 #top-container{
     display: flex;
+    justify-content: space-between;
      
 }
 #game-title{
-    margin:auto 0 auto auto;
+    font-weight: 900;
+    -webkit-text-stroke: 1px black;
     font-size: xx-large;
-    color:rgb(247, 240, 204);
+    color:rgb(255, 255, 255);
     
 }
 #git-logo{ 
-   margin-left: 465px;
+   
    
 }
 #git-logo img:hover{
@@ -72,8 +76,10 @@ img{
     
 }
 .gameover{
+    
     font-size: 100px;
     color: rgb(247, 240, 204);
+    /* color: rgb(0, 255, 191); */
     margin-right: auto;
     margin-left: auto;
     transition: 1s;
@@ -97,14 +103,28 @@ img{
     margin-top: 50px;
     align-items: center;
     justify-content: center;
+    
+}
+.reset{
+    font-size:30px;
+    box-shadow: 5px 5px black;
+}
+.reset:active{
+    margin-left: 2px;
+    margin-top: 2px;
+    box-shadow: 2px 2px black;
 }
 #timer{
-    color: rgb(255, 169, 132);
+    /* color: rgb(255, 169, 132); */
+    color: black;
     position:absolute;
     font-weight: 800;
     font-size: x-large;
     top: 300px;
     left:20%;
+    background-color: white;
+    /* background-color: rgb(0, 255, 191); */
+    box-shadow: 2px 5px black;
 }
 @media screen and (max-width: 480px) {
 
